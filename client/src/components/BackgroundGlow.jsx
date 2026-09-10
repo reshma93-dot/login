@@ -103,10 +103,8 @@ const BackgroundGlow = ({ speed = 1, interactivity = 0.05 }) => {
                         repeat: Infinity,
                         ease: "linear"
                     }}
-                    className="glow-layer secondary-glow"
-                    style={{
-                        willChange: 'transform'
-                    }}
+          
+                
                 />
             </div>
         </motion.div>

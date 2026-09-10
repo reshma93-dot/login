@@ -11,7 +11,7 @@ import devopsLogo from "../../assets/courses_icons/DevOps.png";
 import roboticsLogo from "../../assets/courses_icons/RobAi.png";
 import baLogo from "../../assets/courses_icons/DA.png";
 {/* <div className="courses-footer"></div> */}
-
+ 
 const coursesData = [
   { id: 1,track: 2,badge: "Advance Growth", badgeColor: "green",  title: "Full Stack Web Development (MERN)",description: "Build full stack skills in MERN with expert guidance, hands-on projects, and career support.",       tags: ["Git", "MongoDB", "Express", "React", "Node.js"],                            duration: "4 - 6 Months", support: "Job Offer Support",logo: fullStackLogo },
   { id: 2,track: 1,badge: "Advance Growth", badgeColor: "green", title: "AI & Machine Learning",             description: "Learn to build and deploy intelligent models with supervised and unsupervised learning techniques.", tags: ["Supervised & Unsupervised Learning", "Model Building", "Deployment"],       duration: "4 - 6 Months", support: "Job Offer Support",logo: aiLogo },
@@ -166,12 +166,7 @@ export default function Courses({ registerGoToPage, registerPageRef, registerTot
     };
   };
 
-  const getSlideClass = (index) => {
-    const diff = getCircularDiff(index, activeIndex, totalCards);
-    if (diff === 0) return "courses-carousel-slide active";
-    if (Math.abs(diff) === 1) return "courses-carousel-slide adjacent";
-    return "courses-carousel-slide";
-  };
+   
 
   return (
     <section className="courses-section">
@@ -237,7 +232,8 @@ export default function Courses({ registerGoToPage, registerPageRef, registerTot
                     <button className="courses-btn-syllabus">
                       <svg viewBox="0 0 24 24" className="download-icon" style={{ width: "16px", height: "16px" }} xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 3v12M12 15l-5-5M12 15l5-5M4 19h16" stroke="currentColor" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
-                      </svg>
+                      </svg>.
+                      
                       Syllabus
                     </button>
                     <button
